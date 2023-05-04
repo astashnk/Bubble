@@ -1,8 +1,12 @@
 body{margin: 0;}
 
-header{height: 60px;
-background-color: rgb(213, 214, 249);  // временное свойство
-box-shadow: rgba(17, 18, 38, 0.15) 0px 0px 20px 0px;
+header{
+    height: 60px;
+    padding: 0px 35px;
+    background-color: rgb(213, 214, 249);  // временное свойство
+    box-shadow: rgba(17, 18, 38, 0.15) 0px 0px 20px 0px;
+    .header-box{background-color: rgb(246, 209, 255); // временное свойство
+        .header__logo{width: 110px;};
+    }
 }
 
-.header__logo{width: 106px;}
