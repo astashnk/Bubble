@@ -4,20 +4,266 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/86178fc1dd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style-mixins.scss">
     <link rel="stylesheet" href="scss/style-header.scss">
-    <link rel="icon" type="image/png" href="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1530294839424x143528842134401200%2FIcon-no-clearspace.png?w=128&amp;h=&amp;auto=compress&amp;dpr=1&amp;fit=max">
+    <link rel="stylesheet" href="scss/style-bestway.scss">
+    <link rel="stylesheet" href="scss/style-companies.scss">
+    <link rel="stylesheet" href="scss/style-design.scss">
+    <link rel="stylesheet" href="scss/style-functionality.scss">
+    <link rel="stylesheet" href="scss/style-pixel.scss">
+    <link rel="stylesheet" href="scss/style-robust.scss">
+    <link rel="stylesheet" href="scss/style-users.scss">
+    <link rel="stylesheet" href="scss/style-community.scss">
+    <link rel="stylesheet" href="scss/style-account.scss">
+    <link rel="stylesheet" href="scss/style-navigation.scss">
+    <link rel="stylesheet" href="scss/style-footer.scss">
+    <link rel="stylesheet" href="scss/style-banner.scss">
+    <link rel="icon" type="image/png" href="img/bubble-icon.png">
     <title>The best way to build web apps without code | Bubble</title>
 </head>
 <body>
     <header>
-        <div class="header-box">
-            <img class="header__logo" src="https://meta-l.cdn.bubble.io/f1531946819200x747478706762194600/Bubble%20logo.svg" alt="Bubble">
-
-
-
+        <div class="header-container">
+            <img class="header__logo" src="img/bubble-logo.svg" alt="Bubble">
+            <div class="header-nav">
+                <a class="header-nav__link" href="">Product&nbsp<i class="fa-solid fa-chevron-down"></i></a>
+                <a class="header-nav__link" href="">Pricing</a>
+                <a class="header-nav__link" href="">Showcase</a>
+                <a class="header-nav__link" href="">Academy</a>
+                <span class="header-nav__separator">|</span>
+                <a class="header-nav__link" href="">Contact sales</a>
+                <a class="header-nav__link link-blue" href="">Log in</a>
+                <a class="header-nav__link link-button" href="">Get started</a>
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section id="bestway">
+            <div class="bestway-container">
+                <div class="bestway-info">
+                    <h1 class="bestway-info__main-header">The best way to build<br>
+                        <span class="bestway-info__main-header-bright">dashboards</span><br>
+                        without code</h1>
+                    <h4 class="bestway-info__under-header-text">Building tech is slow and expensive. Bubble is the most powerful no-code platform for creating digital products. Build better and faster.</h4>
+                    <button type="button" class="bestway-info__button">Get started for free</button>
+                    <h6 class="bestway-info__text">Join <span class="bestway-info__text-bright">2,741,198</span> Bubblers today.</h6>
+                </div>
+                <img class="bestway-img" src="img/banner-img.jpg" alt="banner-image">
+            </div>
+        </section>
+        <section id="companies">
+            <div class="companies-container">
+                <h6 class="companies__header">EMPOWERING INNOVATIVE COMPANIES WORLDWIDE</h6>
+                <div class="companies-partners">
+                    <img class="companies-partners__logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1667326417036x110943813132859950%2FLoreal%2520%25281%2529.png?w=128&h=24&auto=compress&dpr=1.25&fit=max" alt="partner-logo">
+                    <img class="companies-partners__logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1667326433812x143419106846252700%2FVector%2520%25281%2529.png?w=128&h=29&auto=compress&dpr=1.25&fit=max" alt="partner-logo">
+                    <img class="companies-partners__logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1667326480781x315778019117815400%2FVEED.IO%2520%25282%2529.png?w=128&h=23&auto=compress&dpr=1.25&fit=max" alt="partner-logo">
+                    <!-- one logo is thinner than the others -->
+                    <img class="companies-partners__logo logo-lyft" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1667326549692x289371007992160960%2FLYFT%2520%25281%2529.png?w=96&h=68&auto=compress&dpr=1.25&fit=max" alt="partner-logo">
+                    <img class="companies-partners__logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1667326563864x448918184951921000%2FRAPPI%2520%25281%2529.png?w=128&h=52&auto=compress&dpr=1.25&fit=max" alt="partner-logo">
+                    <img class="companies-partners__logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1667326581930x821269894427422300%2FHubspot%2520%25281%2529.png?w=128&h=37&auto=compress&dpr=1.25&fit=max" alt="partner-logo">
+                    <img class="companies-partners__logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1667326594631x760952137121193300%2Fvmware%2520%25281%2529.png?w=128&h=21&auto=compress&dpr=1.25&fit=max" alt="partner-logo">
+                    <img class="companies-partners__logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1667326607920x232001231065581700%2Fzendesk%2520%25281%2529.png?w=128&h=24&auto=compress&dpr=1.25&fit=max" alt="partner-logo">
+                </div>
+            </div>
+        </section>
+        <section id="design">
+            <div class="design-container">
+                <div class="design-box">
+                    <div class="design-info">
+                        <img class="design-info__icon" src="img/prototype-icon.svg" alt="design-icon">
+                        <h5 class="design-info__header">Prototype</h5>
+                        <h6 class="design-info__under-header-text">Demonstrate your idea before making an investment in technical resources.</h6>
+                    </div>
+                    <div class="design-info">
+                        <img class="design-info__icon" src="img/launch-icon.svg" alt="design-icon">
+                        <h5 class="design-info__header">Launch</h5>
+                        <h6 class="design-info__under-header-text">Build customer-facing web platforms and internal tools in hours instead of months.</h6>
+                    </div>
+                    <div class="design-info">
+                        <img class="design-info__icon" src="img/iterate-icon.svg" alt="design-icon">
+                        <h5 class="design-info__header">Iterate</h5>
+                        <h6 class="design-info__under-header-text">Empower anyone on your team to make changes, not just developers.</h6>
+                    </div>
+                    <div class="design-info">
+                        <img class="design-info__icon" src="img/scale-icon.svg" alt="design-icon">
+                        <h5 class="design-info__header">Scale</h5>
+                        <h6 class="design-info__under-header-text">Gain traction and grow without worrying about infrastructure.</h6>
+                    </div>
+                </div>
+                    <h2 class="design__header">Design, develop and run powerful products with Bubble.</h2>
+                    <a class="design__under-header-text" href="">Edit this page in Bubble to see how it works <img class="design__after-text-icon" src="img/arrow-mini.svg" alt="design-mini-icon"> </a>
+            </div>
+        </section>
+        <section id="functionality">
+            <div class="functionality-container">
+                <img class="functionality__img" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1547039382911x117151079037566720%2FControl.png?w=768&h=524&auto=compress&dpr=1.25&fit=max" alt="functionality-image">
+                <h2 class="functionality__main-header">Full functionality, no code</h2>
+                <h5 class="functionality__under-header-text">Bubble lets you create interactive, multi-user apps for desktop and mobile web browsers, including all the features you need to build a site like Facebook or Airbnb. Build out logic and manage a database with our intuitive, fully customizable platform.</h5>
+                <button class="functionality__button" type="button">Get started for free</button>
+            </div>
+        </section>
+        <section id="pixel">
+            <!-- section with gif -->
+            <div class="pixel-container">
+                <img class="pixel__gif" src="https://meta-l.cdn.bubble.io/f1547041394867x862772289826318300/map.gif?ignore_imgix" alt="workflow-editor">
+                <h2 class="pixel__main-header">Pixel-perfect designs</h2>
+                <h5 class="pixel__under-header-text">Bubble offers total design freedom without any knowledge of HTML or CSS. Create mobile-friendly layouts and dynamic content for a polished product that you'll be proud to show off to your prospects, customers, or investors.</h5>
+                <button class="pixel__button" type="button">Get started for free</button>
+            </div>
+        </section>
+        <section id="robust">
+            <div class="robust-container">
+                <img class="robust__img" src="img/infrastructure-img.svg" alt="workflow-editor">
+                <h2 class="robust__main-header">Robust, scalable infrastructure</h2>
+                <h5 class="robust__under-header-text">Traditional web applications require you to manage your code and set up a deployment process to a web server. Bubble handles deployment and hosting for you. There are no hard limits on the number of users, volume of traffic, or data storage.</h5>
+                <button class="robust__button" type="button">Get started for free</button>
+            </div>
+        </section>
+        <section id="users">
+            <div class="users-container">
+                <h2 class="users__main-header">Successful companies use Bubble.</h2>
+                <div class="users-box">
+                    <div class="users-info">
+                        <img class="users-info__logo divident-logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1595263986739x160813561665505760%2Fdividend%2520finance.png?w=384&h=74&auto=compress&dpr=1.25&fit=max" alt="users-logo">
+                        <h5 class="users-info__under-logo-text">Offers clean energy home financing</h5>
+                        <h5 class="users-info__text">Raised $365M <br> in venture funding</h5>
+                    </div>
+                    <div class="users-info">
+                        <img class="users-info__logo qoins-logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1595264700173x139531598417009800%2Fqoins-logo.png?w=192&h=60&auto=compress&dpr=1.25&fit=max" alt="users-logo">
+                        <h5 class="users-info__under-logo-text">Helps repay loans and debt automatically</h5>
+                        <h5 class="users-info__text">Raised $1.5M <br> in venture funding</h5>
+                    </div>
+                    <div class="users-info">
+                        <img class="users-info__logo comet-logo" src="https://meta-l.cdn.bubble.io/f1595264597206x857303228884211700/Comet.svg" alt="users-logo">
+                        <h5 class="users-info__under-logo-text">Curates agile freelance IT talent</h5>
+                        <h5 class="users-info__text">Raised $13M <br> in venture funding</h5>
+                    </div>
+                    <div class="users-info">
+                        <img class="users-info__logo teal-logo" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1623774572718x198856631999528860%2FTEAL_Logo_Full_2-Color%2520%25281%2529.png?w=192&h=53&auto=compress&dpr=1.25&fit=max" alt="users-logo">
+                        <h5 class="users-info__under-logo-text">Tracks and organizes job search</h5>
+                        <h5 class="users-info__text">Raised $5M <br> in venture funding</h5>
+                    </div>
+                </div>
+                <button class="users__button" type="button">Get started for free</button>
+            </div>
+        </section>
+        <section id="community">
+            <!-- section with effects (changing color, box-shadow) -->
+            <div class="community-container">
+                <h2 class="community__main-header">Join a thriving community of Bubble developers.</h2>
+                <div class="community-box">
+                    <a class="community-link" href="">
+                        <img class="community-link__icon" src="img/forum-icon.svg" alt="community-icon">
+                        <h3 class="community-link__header">Forum</h3>
+                        <h5 class="community-link__under-header-text">Ask and answer questions about Bubble in our active user community.</h5>
+                    </a>
+                    <a class="community-link" href="">
+                        <img class="community-link__icon" src="img/integrations-icon.svg" alt="community-icon">
+                        <h3 class="community-link__header">Integrations</h3>
+                        <h5 class="community-link__under-header-text">Extend Bubble's core functionality with new elements, actions, and API connections.</h5>
+                    </a>
+                    <a class="community-link" href="">
+                        <img class="community-link__icon" src="img/marketplace-icon.svg" alt="community-icon">
+                        <h3 class="community-link__header">Marketplace</h3>
+                        <h5 class="community-link__under-header-text">Find the perfect template or plugin to help you realize your vision.</h5>
+                    </a>
+                    <a class="community-link" href="">
+                        <img class="community-link__icon" src="img/agencies-icon.svg" alt="community-icon">
+                        <h3 class="community-link__header">Agencies</h3>
+                        <h5 class="community-link__under-header-text">Purchase services from our vibrant ecosystem of freelancers and agencies.</h5>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="account">
+            <div class="account-container">
+                <h2 class="account__main-header">Create a free account to get started.</h2>
+                <button class="account__button" type="button">Get started for free</button>
+                <h6 class="account__text">Join 2,741,198 Bubblers today and start building.</h6>
+            </div>
+        </section>
+        <section id="navigation">
+            <div class="navigation-container">
+                <div class="navigation-groups">
+                    <div class="navigation-block">
+                        <h6 class="navigation__header">Discover</h6>
+                        <a class="navigation__link" href="">Features</a>
+                        <a class="navigation__link" href="">Showcase</a>
+                        <a class="navigation__link" href="">Pricing</a>
+                        <a class="navigation__link" href="">AI</a>
+                        <a class="navigation__link" href="">How to build</a>
+                        <a class="navigation__link" href="">FAQ</a>
+                    </div>
+                    <div class="navigation-block">
+                        <h6 class="navigation__header">Product</h6>
+                        <a class="navigation__link" href="">Responsive design</a>
+                        <a class="navigation__link" href="">Version control</a>
+                        <a class="navigation__link" href="">Academy</a>
+                        <a class="navigation__link" href="">Feature index</a>
+                        <a class="navigation__link" href="">Integrations</a>
+                        <a class="navigation__link" href="">Security</a>
+                        <a class="navigation__link" href="">Releases</a>
+                        <a class="navigation__link" href="">Status</a>
+                    </div>
+                    <div class="navigation-block">
+                        <h6 class="navigation__header">Ecosystem</h6>
+                        <a class="navigation__link" href="">Marketplace</a>
+                        <a class="navigation__link" href="">Templates</a>
+                        <a class="navigation__link" href="">Plugins</a>
+                        <a class="navigation__link" href="">Agencies</a>
+                        <a class="navigation__link" href="">Bootcamps</a>
+                        <a class="navigation__link" href="">Coaching</a>
+                        <a class="navigation__link" href="">Partnerships</a>
+                    </div>
+                    <div class="navigation-block">
+                        <h6 class="navigation__header">Community</h6>
+                        <a class="navigation__link" href="">Forum</a>
+                        <a class="navigation__link" href="">Blog</a>
+                        <a class="navigation__link" href="">Immerse</a>
+                        <a class="navigation__link" href="">LinkedIn</a>
+                        <a class="navigation__link" href="">Twitter</a>
+                        <a class="navigation__link" href="">Facebook</a>
+                        <a class="navigation__link" href="">Youtube</a>
+                    </div>
+                    <div class="navigation-block">
+                        <h6 class="navigation__header">Company</h6>
+                        <a class="navigation__link" href="">About</a>
+                        <a class="navigation__link" href="">Careers</a>
+                        <a class="navigation__link" href="">Values</a>
+                        <a class="navigation__link" href="">Press</a>
+                        <a class="navigation__link" href="">Brand guidelines</a>
+                        <a class="navigation__link" href="">Support</a>
+                        <a class="navigation__link" href="">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="banner">
+            <img class="banner-image" src="img/bubble-photo.png" alt="navigation-photo">
+            <img class="banner-image2" src="img/bubble-photo2.png" alt="navigation-photo">
+            <a class="banner-button" href="">
+                <img class="banner-button__icon" src="img/banner-icon.svg" alt="bubble-icon">
+                <h6 class="banner-button__text">Built on Bubble</h6>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-nav">
+                    <a class="footer-nav__link" href="">Terms</a>
+                    <a class="footer-nav__link" href="">Privacy</a>
+                    <a class="footer-nav__link" href="">Marketplace policies</a>
+                    <a class="footer-nav__link" href="">Acceptable use</a>
+                    <a class="footer-nav__link" href="">GDPR / DPA</a>
+                </div>
+                <h6 class="footer-container__text">© 2023, Bubble Group, Inc. All Rights Reserved.</h6>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
