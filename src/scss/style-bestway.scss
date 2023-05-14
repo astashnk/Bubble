@@ -1,0 +1,52 @@
+@import 'style-mixins.scss';
+
+#bestway{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    .bestway-container{display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 1130px;
+        background-color: rgb(255, 255, 255); // временное свойство
+        .bestway-info{width: 550px;
+            padding-bottom: 60px;
+            .bestway-info__main-header{font-size: 50px;
+            font-family: $font;
+            font-weight: 800;
+            color: #00033d;
+            margin-bottom: 28px;}
+            .bestway-info__main-header-bright {color: rgb(66, 77, 248);}
+            .bestway-info__under-header-text {font-family: $font;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;}
+            .bestway-info__button{
+                width: 280px;
+                height: 45px;
+                background-color: rgb(13, 31, 161);
+                border-radius: 5px;
+                border: none;
+                color: white;
+                font-family: $font;
+                font-size: 16px;
+                font-weight: 700;
+                &:hover { 
+                    transition-duration: 0.2s;
+                    background-color: rgb(38, 0, 254);
+                    border-bottom: 5px solid rgba(27, 36, 43, 0.27);
+                    padding-top: 6px;}}
+            .bestway-info__text{font-family: $font;
+                font-size: 16px;
+                font-weight: 500;
+                display: inline-block;
+                margin-left: 14px;
+                .bestway-info__text-bright{font-weight: 600;
+                    font-size: 18px;}
+            }
+        }
+        .bestway-img{width: 540px;
+            height: 360px;
+            padding-top: 60px;}
+    }
+}

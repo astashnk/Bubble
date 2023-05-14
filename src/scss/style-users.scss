@@ -1,0 +1,56 @@
+@import 'style-mixins.scss';
+
+#users{
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    .users-container{width: 1030px;
+        .users__main-header{@include bold-header;
+            text-align: center;
+            margin-bottom: 10px;}
+        .users-box {display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 15px;
+            .users-info{
+                margin: 15px;
+                height: 216px;
+                border-radius: 10px;
+                background-color: rgb(241, 243, 246);
+                .users-info__logo{margin-top: 20px;}
+                .divident-logo{
+                    width: 240px;
+                    height: 46px;
+                    position: relative;
+                    left: calc(50% - 240px / 2);}
+                .qoins-logo{
+                    width: 153px;
+                    height: 48px;
+                    position: relative;
+                    left: calc(50% - 153px / 2);}
+                .comet-logo{
+                    width: 166px;
+                    height: 48px;
+                    position: relative;
+                    left: calc(50% - 166px / 2);}
+                .teal-logo{
+                    width: 166px;
+                    height: 46px;
+                    position: relative;
+                    left: calc(50% - 166px / 2);}
+                .users-info__under-logo-text{
+                    margin: 15px;
+                    font-family: $font;
+                    font-weight: 500;
+                    font-size: 18px;
+                    text-align: center;}
+                .users-info__text{
+                    font-family: $font;
+                    font-weight: 700;
+                    font-size: 17px;
+                    text-align: center;
+                    line-height: 24px;}
+            }
+        }
+        .users__button{@include button;}
+    }
+}

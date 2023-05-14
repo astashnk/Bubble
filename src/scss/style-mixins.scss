@@ -1,0 +1,45 @@
+@mixin bold-header {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+    color: #242424;
+}
+
+@mixin medium-header {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 24px;}
+
+@mixin under-header-text {
+    width: 560px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;}
+
+@mixin button {width: 340px;
+    height: 45px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    background-color: #0205d3;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: calc(50% - 340px/2);
+    &:hover {
+        transition-duration: 0.2s;
+        background-color: rgb(38, 0, 254);}}
+
+@mixin background {
+    background: linear-gradient( rgb(242, 243, 246) 0%, 
+    rgba(255, 255, 255, 0) 100%);}
+
+
+$font: 'Schibsted Grotesk', sans-serif;

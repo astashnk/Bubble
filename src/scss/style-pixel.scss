@@ -1,0 +1,20 @@
+@import 'style-mixins.scss';
+
+#pixel {
+    @include background;
+    padding-top: 68px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    .pixel-container{width: 780px;
+        .pixel__gif{width: 635px;
+            height: 433px;
+            border-radius: 10px;
+            position: relative;
+            left: calc(50% - 635px/2);
+            box-shadow: 0px 0px 30px -3px rgba(0, 0, 0, 0.2);}
+        .pixel__main-header{@include medium-header;}
+        .pixel__under-header-text{@include under-header-text;}
+        .pixel__button {@include button}
+    }
+}

@@ -1,0 +1,30 @@
+@import 'style-mixins.scss';
+
+#companies {
+    background-color: rgb(242, 245, 249);
+    display: flex;
+    justify-content: center;
+    .companies-container{
+        width: 1130px;
+        padding-top: 30px;
+        .companies__header{
+            text-align: center;
+            font-family: $font;
+            font-size: 17px;
+            font-weight: 600;
+            padding-bottom: 12px;}
+        .companies-partners {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 80px;
+            .companies-partners__logo{
+                padding-left: 20px;
+                padding-right: 20px;
+                align-self: center;
+                width: 100px;
+                margin: 0 auto;}
+            .logo-lyft {width: 63px;}
+        }
+    }
+}

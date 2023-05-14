@@ -1,0 +1,18 @@
+@import 'style-mixins.scss';
+
+#robust {
+    @include background;
+    padding-top: 68px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    .robust-container{width: 780px;
+        .robust__img{width: 775px;
+            height: 385px;
+            position: relative;
+            left: calc(50% - 775px/2);}
+        .robust__main-header{@include medium-header;}
+        .robust__under-header-text{@include under-header-text;}
+        .robust__button {@include button}
+    }
+}
