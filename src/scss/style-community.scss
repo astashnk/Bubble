@@ -5,12 +5,18 @@
     display: flex;
     justify-content: center;
     .community-container{width: 1030px;
+        @media (max-width: 730px) {
+            width: 490px;}
         .community__main-header{@include bold-header;
             text-align: center;
             margin-bottom: 10px;}
         .community-box {display: grid;
             grid-template-columns: 1fr 1fr;
             margin-bottom: 15px;
+            padding-left: 5px;
+            padding-right: 5px;
+            @media (max-width: 730px) {
+                grid-template-columns: 1fr;}
             .community-link{
                 margin: 15px;
                 box-sizing: border-box;

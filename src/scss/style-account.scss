@@ -13,7 +13,24 @@
             font-weight: 700;
             font-size: 42px;
             margin-bottom: 30px;
-            text-align: center;}
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            @media (max-width: 818px) {
+                display: none;}}
+        .account__short-header{
+            color: white;
+            font-family: $font;
+            font-weight: 700;
+            font-size: 42px;
+            margin-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            display: none;
+            @media (max-width: 818px) {
+                font-size: 34px;
+                display: block;}}
         .account__button{
             width: 310px;
             height: 45px;

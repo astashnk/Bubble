@@ -7,10 +7,20 @@
     justify-content: center;
     padding-bottom: 45px;
     .robust-container{width: 780px;
+        display: flex;
+        flex-direction: column;
         .robust__img{width: 775px;
             height: 385px;
-            position: relative;
-            left: calc(50% - 775px/2);}
+            margin: 0 auto;
+            @media (max-width: 850px){
+                width: 550px;
+                height: 275px;}
+            @media (max-width: 630px){
+                width: 450px;
+                height: 225px;}
+            @media (max-width: 500px){
+                width: 320px;
+                height: 160px;}}
         .robust__main-header{@include medium-header;}
         .robust__under-header-text{@include under-header-text;}
         .robust__button {@include button}

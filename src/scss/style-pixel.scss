@@ -7,12 +7,22 @@
     justify-content: center;
     padding-bottom: 45px;
     .pixel-container{width: 780px;
+        display: flex;
+        flex-direction: column;
         .pixel__gif{width: 635px;
             height: 433px;
             border-radius: 10px;
-            position: relative;
-            left: calc(50% - 635px/2);
-            box-shadow: 0px 0px 30px -3px rgba(0, 0, 0, 0.2);}
+            margin: 0 auto;
+            box-shadow: 0px 0px 30px -3px rgba(0, 0, 0, 0.2);
+            @media (max-width: 710px){
+                width: 550px;
+                height: 375px;}
+            @media (max-width: 630px){
+                width: 450px;
+                height: 305px;}
+            @media (max-width: 500px){
+                width: 320px;
+                height: 220px;}}
         .pixel__main-header{@include medium-header;}
         .pixel__under-header-text{@include under-header-text;}
         .pixel__button {@include button}

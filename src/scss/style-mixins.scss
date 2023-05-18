@@ -1,16 +1,25 @@
+//mixins for headers, under header text, buttons and background
+
 @mixin bold-header {
     font-family: 'Schibsted Grotesk', sans-serif;
     font-weight: 800;
     font-size: 42px;
     color: #242424;
-}
+    padding-left: 20px;
+    padding-right: 20px;
+    @media (max-width: 818px) {
+        font-size: 34px;}}
 
 @mixin medium-header {
     font-family: 'Schibsted Grotesk', sans-serif;
     font-weight: 700;
     font-size: 38px;
     text-align: center;
-    padding-top: 24px;}
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media (max-width: 784px){
+        font-size: 32px;}}
 
 @mixin under-header-text {
     width: 560px;
@@ -20,7 +29,18 @@
     line-height: 30px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 30px;}
+    margin-bottom: 30px;
+    @media (max-width: 784px){
+        font-size: 16px;
+        width: fit-content;
+        padding-left: 80px;
+        padding-right: 80px;}
+    @media (max-width: 610px){
+        padding-left: 70px;
+        padding-right: 70px;}
+    @media (max-width: 500px){
+        padding-left: 20px;
+        padding-right: 20px;}}
 
 @mixin button {width: 340px;
     height: 45px;
@@ -41,5 +61,6 @@
     background: linear-gradient( rgb(242, 243, 246) 0%, 
     rgba(255, 255, 255, 0) 100%);}
 
+//font for all the sections
 
 $font: 'Schibsted Grotesk', sans-serif;

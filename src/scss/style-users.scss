@@ -5,12 +5,18 @@
     display: flex;
     justify-content: center;
     .users-container{width: 1030px;
+        @media (max-width: 730px) {
+            width: 490px;}
         .users__main-header{@include bold-header;
             text-align: center;
             margin-bottom: 10px;}
         .users-box {display: grid;
             grid-template-columns: 1fr 1fr;
             margin-bottom: 15px;
+            padding-left: 5px;
+            padding-right: 5px;
+            @media (max-width: 730px) {
+                grid-template-columns: 1fr;}
             .users-info{
                 margin: 15px;
                 height: 216px;
