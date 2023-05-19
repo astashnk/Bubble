@@ -12,15 +12,16 @@ header{
     box-shadow: rgba(17, 18, 38, 0.15) 0px 0px 20px 0px;
     z-index: 1;
     display: flex;
-    justify-content: center;
-    .header-container{width: 1130px;
+    .header-container{width: 100%;
         display: flex;
         justify-content: space-between;
         background-color: rgb(255, 255, 255); 
-        padding-left: 20px;
-        padding-right: 20px;       
-        .header__logo{width: 110px;
-        padding-top: 5px};
+        padding-left: 35px;
+        padding-right: 35px;  
+        @media (max-width: 916px){
+            padding-left: 20px;
+            padding-right: 20px;}     
+        .header__logo{width: 110px;}
         .fa-solid.fa-bars {
             font-size: 20px;
             padding-top: 20px;
@@ -45,7 +46,7 @@ header{
                     color: rgb(0, 20, 255);}
                 .fa-solid.fa-chevron-down {font-size: 12px;}}
             .link-blue{color: #0d1fa1;;}
-            .link-button {width: 150px;
+            .link-button {width: 125px;
                 height: 42px;
                 background-color: #0d1fa1;
                 color: white;
